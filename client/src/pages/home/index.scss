@@ -1,0 +1,53 @@
+#Home{
+    .container{
+        .second-section{
+            padding: 50px 0;
+            .cards{
+                display: flex;
+                column-gap: 29px;
+                .card{
+                    border: 1px solid rgba(179, 179, 179, 0.7);
+                    width: 30%;
+                    height: 250px;
+                    padding: 0 25px;
+                    padding-top: 40px;
+                    color: rgb(51, 51, 51);
+                    .cardTitle{
+                        font-size: 27px;
+                    }
+                }
+                .card1{
+                    background-image: url("../../images/banner1.jpg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                .card2{
+                    background-image: url("../../images/banner2.jpg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                .card3{
+                    background-image: url("../../images/banner3.jpg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+
+        .third-section{
+            margin: 50px 0;
+            .productsTitle{
+                font-size: 45px;
+            }
+        }
+        .loadBtn{
+            margin: 40px auto;
+            display: block;
+            padding: 10px 45px;
+            border: 1px solid rgba(77, 77, 77, 0.3);
+            font-weight: 600;
+            border-radius: 19px;
+            cursor: pointer;
+        }
+    }
+}

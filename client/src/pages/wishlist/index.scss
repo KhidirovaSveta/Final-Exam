@@ -1,0 +1,37 @@
+#Wishlist{
+    margin-top: 120px;
+    .container{
+        .wishlist{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            row-gap: 15px;
+            .wish-card{
+                .botton{
+                    margin-top: 10px;
+                   display: flex;
+                   align-items: center;
+                   justify-content: space-between;
+                    .removeBtn{
+                        margin: 10px 0;
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                        .fa-trash{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .removeAllBtn{
+            background-color: rgba(179, 0, 0);
+            padding: 7px 25px;
+            color: #fff;
+            border: none;
+            margin: 40px auto;
+            display: block;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+#Detail{
+    margin-top: 140px;
+    margin-bottom: 50px;
+    .container{
+        .goBackBtn{
+            margin-bottom: 20px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .detail{
+            margin-left: 20%;
+            display: flex;
+            column-gap: 20px;
+            .delBtn{
+                background-color: transparent;
+                border: none;
+                margin-right: 10px;
+                margin: 10px;
+                color: rgba(48, 48, 48, 0.9);
+                cursor: pointer;
+                .fa-trash{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

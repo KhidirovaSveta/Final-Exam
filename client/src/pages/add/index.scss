@@ -1,0 +1,29 @@
+#Add{
+    max-width: 1400px;
+    margin: 250px auto;
+    .addTitle{
+        font-size: 32px;
+        margin-bottom: 22px;
+        color: rgb(51, 51, 51);
+        font-family: 'Playfair Display', serif;
+    }
+    .formik-input{
+        margin-bottom: 15px;
+        input{
+            padding: 7px 10px;
+            width: 100%;
+            border: 1px solid rgba(179, 179, 179, 0.7);
+            font-size: 15px;
+        }
+        .red{
+            color: rgb(223, 0, 0);
+        }
+    }
+    .addBtn{
+        margin-top: 20px;
+        padding: 7px 35px;
+        border: none;
+        color: #fff;
+        background-color: #717fe0;
+    }
+}

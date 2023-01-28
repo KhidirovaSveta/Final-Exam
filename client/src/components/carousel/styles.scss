@@ -1,0 +1,76 @@
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#Carousel{
+  .carousel1{
+    .info{
+     position: absolute;
+     top: 42%;
+     left: 14%;
+     color: rgb(51, 51, 51);
+     .mainTextCarousel{
+        font-size: 60px;
+        font-family: 'Playfair Display', serif;
+     }
+     .subinfo{
+      font-size: 28px;
+     }
+     .carouselBtn{
+      margin-top: 35px;
+      font-weight: 600;
+      padding: 14px 47px;
+      border: none;
+      border-radius: 28px;
+      color: #fff;
+      cursor: pointer;
+      background-color: #717fe0;
+      transition: all .5s;
+      &:hover{
+        background-color: #000;
+      }
+     }
+    }
+  }
+}

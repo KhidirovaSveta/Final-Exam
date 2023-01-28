@@ -1,0 +1,76 @@
+#Products{
+    .menu{
+        .nav{
+           margin: 20px 0;
+           display: flex;
+           justify-content: space-between;
+              .link{
+                display: flex;
+                column-gap: 25px;
+                a{
+                    text-decoration: none;
+                    font-size: 17px;
+                    color: rgb(51, 51, 51);
+                    transition: all .8s;
+                    &:hover{
+                      color: #000;
+                      border-bottom: 1px solid #000;
+                    }
+                }
+             }
+             .filterByPrice{
+                padding: 7px 25px;
+                background-color: transparent;
+                color: rgb(51, 51, 51);
+                border: 1px solid rgba(77, 77, 77, 0.3);
+                border-radius: 3px;
+             }
+        }
+        .searchByName{
+            width: 98%;
+            background-color: transparent;
+            padding: 15px 15px;
+            font-size: 15px;
+            border: 1px solid rgba(77, 77, 77, 0.3);
+        }
+    }
+    .products-cards{
+        margin-top: 45px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 35px;
+        color: rgb(151, 151, 151);
+        .card{
+            width: 290px;
+            height: 440px;
+            .contain{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                .card-action{
+                    .delBtn{
+                        background-color: transparent;
+                        border: none;
+                        margin-right: 10px;
+                        color: rgba(48, 48, 48, 0.9);
+                        .fa-trash{
+                            font-size: 17px;
+                        }
+                    }
+                    .wishListBtn{
+                        background-color: transparent;
+                        border: none;
+                        color: rgb(192, 0, 0);
+                        .fa-heart{
+                            font-size: 17px;
+                        }
+                    }
+                }
+                .cardTitle{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

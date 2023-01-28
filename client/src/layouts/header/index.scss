@@ -1,0 +1,82 @@
+.mainHeader {
+    padding: 12px 18px;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    color: #000;
+  }
+  .main-block {
+    padding: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+  .fixedTop {
+    width: 99%;
+    padding: 12px 18px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    background: #fff;
+  }
+  .fixedTop + .main-block {
+    padding-top: 102px;
+  }
+
+  #Header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    .header{
+      display: flex;
+      justify-content: space-between;
+       max-width: 1400px;
+       margin: 0 auto;
+       padding: 10px 0;
+        .logo-nav{
+            display: flex;
+            align-items: center;
+            column-gap: 55px;
+            ul{
+                display: flex;
+                list-style: none;
+                column-gap: 20px;
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    transition: all .5s;
+                    &:hover{
+                      color: #717fe0;
+                    }
+                    &:focus{
+                      color: #717fe0;
+                    }
+                }
+            }
+        }
+        .search-wishlist{
+            display: flex;
+            column-gap: 25px;
+            .fa-solid{
+              transition: all .7s;
+              &:hover{
+                color: #717fe0;
+              }
+            }
+            .fa-solid{
+              font-size: 17px;
+            }
+            a{
+              transition: all .7s;
+              color: #000;
+              .fa-heart{
+                font-size: 17px;
+            }
+            &:hover{
+              color: #717fe0;
+            }
+        }
+    }
+  }
+}
