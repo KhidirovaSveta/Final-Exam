@@ -73,7 +73,7 @@ const Products = ({wishlist, setWishlist}) => {
                 return(
                  <div className="card">
                   <Link to={`/details/${product._id}`}>
-                    <img src={product.img} alt="" width={"290px"}/>
+                    <img src={product.img} alt="" width={"300px"} height={"400px"}/>
                   </Link>
                     <div className="contain">
                     <p className='cardTitle'>{product.name}</p>
