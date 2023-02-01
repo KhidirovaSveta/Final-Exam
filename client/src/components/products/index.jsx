@@ -8,6 +8,7 @@ const Products = ({wishlist, setWishlist}) => {
   const [product, setProduct] = useState([])
   const [toggle, setToggle] = useState(true)
 
+  const [load, setLoad] = useState(8)
 
   useEffect(() => {
     axios.get(`http://localhost:8080/`).then((data) => setProduct(data.data))
@@ -43,6 +44,12 @@ const Products = ({wishlist, setWishlist}) => {
     axios.delete(`http://localhost:8080/${_id}`).then((data) => axios.get(`http://localhost:8080/`).then((data) => setProduct(data.data)))
   }
 
+  const loadMore = () =>  {
+    setLoad(load + load)
+  }
+
+  const slice = product.slice(0, load)
+
   return (
         <div id='Products'>
             <div className="menu">
@@ -62,7 +69,7 @@ const Products = ({wishlist, setWishlist}) => {
             
 
             <div className="products-cards">
-              {product.map((product) => {
+              {slice.map((product) => {
                 return(
                  <div className="card">
                   <Link to={`/details/${product._id}`}>
@@ -80,6 +87,7 @@ const Products = ({wishlist, setWishlist}) => {
                 )
               })}
             </div>
+              <button className='loadBtn' onClick={() => loadMore()}> LOAD MORE  </button>
 
       </div>
   )

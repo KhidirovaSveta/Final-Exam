@@ -43,7 +43,6 @@ const Home = ({wishlist, setWishlist}) => {
           </div>
 
             
-          <button className='loadBtn'>LOAD MORE </button>
         </div>
     </div>
   )
